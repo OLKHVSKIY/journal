@@ -1,0 +1,683 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Журнал посещений</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css  " rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="gradient-bg"></div>
+  <div class="container-fluid py-4">
+    <div class="card elegant-card border-0 shadow-lg">
+    <div class="card-header elegant-header bg-gradient-primary text-white border-0">
+        <div class="row g-0">
+            <div class="col-md-8">
+                <div class="d-flex align-items-start mb-3">
+                    <!-- <img src="logo.png" alt="Логотип" class="header-logo me-3"> -->
+                    <div>
+                        <h4 class="mb-1 fw-light">
+                            <i class="bi bi-calendar-week me-2"></i>
+                            Журнал посещений
+                        </h4>
+                        <small class="opacity-75 date-range">
+                            13.10.2025 — 19.10.2025
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-end align-items-start pt-2">
+                <div class="btn-group btn-group-sm">
+                    <a href="/journal?week=-1" class="btn btn-outline-light">
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                    <a href="/journal?week=0" class="btn btn-outline-light text-decoration-none">Сегодня</a>
+                    <a href="/journal?week=1" class="btn btn-outline-light">
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+      <div class="card-body p-0">
+        <div class="table-container">
+          <table class="table table-elegant mb-0">
+            <thead class="elegant-thead">
+              <tr>
+                <th class="employee-column">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-people me-2"></i>
+                    <span>Сотрудник</span>
+                  </div>
+                </th>
+                <th class="day-column text-center">
+                  <div class="day-header">
+                    <div class="weekday">Понедельник</div>
+                    <div class="date">13.10.2025</div>
+                  </div>
+                </th>
+                <th class="day-column text-center">
+                  <div class="day-header">
+                    <div class="weekday">Вторник</div>
+                    <div class="date">14.10.2025</div>
+                  </div>
+                </th>
+                <th class="day-column text-center">
+                  <div class="day-header">
+                    <div class="weekday">Среда</div>
+                    <div class="date">15.10.2025</div>
+                  </div>
+                </th>
+                <th class="day-column text-center">
+                  <div class="day-header">
+                    <div class="weekday">Четверг</div>
+                    <div class="date">16.10.2025</div>
+                  </div>
+                </th>
+                <th class="day-column text-center">
+                  <div class="day-header">
+                    <div class="weekday">Пятница</div>
+                    <div class="date">17.10.2025</div>
+                  </div>
+                </th>
+                <th class="day-column text-center">
+                  <div class="day-header">
+                    <div class="weekday">Суббота</div>
+                    <div class="date">18.10.2025</div>
+                  </div>
+                </th>
+                <th class="day-column text-center">
+                  <div class="day-header">
+                    <div class="weekday">Воскресенье</div>
+                    <div class="date">19.10.2025</div>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="org-row" data-animation="fade-in-up">
+                <td class="org-cell">
+                  <div class="org-info">
+                    <i class="bi bi-building me-2"></i>
+                    <span class="org-name">Отдел технической поддержки</span>
+                    <span class="employee-count">6</span>
+                  </div>
+                </td>
+                <td class="org-day-cell"></td>
+                <td class="org-day-cell"></td>
+                <td class="org-day-cell"></td>
+                <td class="org-day-cell"></td>
+                <td class="org-day-cell"></td>
+                <td class="org-day-cell"></td>
+                <td class="org-day-cell"></td>
+              </tr>
+              <tr class="employee-row" data-animation="fade-in-up">
+                <td class="employee-cell">
+                  <div class="employee-info">
+                    <div class="avatar-container">
+                      <img src="http://catalog.spbmiac.ru/wp-content/uploads/2024/09/Белостоков-А.А.jpg" alt="Белостоков Алексей Александрович" class="employee-avatar">
+                    </div>
+                    <div class="employee-details">
+                      <div class="employee-name">Белостоков А.А.</div>
+                      <div class="employee-post">Начальник отдела</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="time-grid">
+                      <div class="time-item arrival">
+                        <div class="time-label">Приход</div>
+                        <div class="time-value">08:28</div>
+                      </div>
+                      <div class="time-item departure">
+                        <div class="time-label">Уход</div>
+                        <div class="time-value">17:43</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="time-grid">
+                      <div class="time-item arrival">
+                        <div class="time-label">Приход</div>
+                        <div class="time-value">09:25</div>
+                      </div>
+                      <div class="time-item departure">
+                        <div class="time-label">Уход</div>
+                        <div class="time-value">17:46</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="time-grid">
+                      <div class="time-item arrival">
+                        <div class="time-label">Приход</div>
+                        <div class="time-value">09:24</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="employee-row" data-animation="fade-in-up">
+                <td class="employee-cell">
+                  <div class="employee-info">
+                    <div class="avatar-container">
+                      <img src="http://catalog.spbmiac.ru/wp-content/uploads/2025/09/Васильев-М.jpg" alt="Васильев Михаил Викторович" class="employee-avatar">
+                    </div>
+                    <div class="employee-details">
+                      <div class="employee-name">Васильев М.В.</div>
+                      <div class="employee-post">Инженер</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="time-grid">
+                      <div class="time-item arrival">
+                        <div class="time-label">Приход</div>
+                        <div class="time-value">09:15</div>
+                      </div>
+                      <div class="time-item departure">
+                        <div class="time-label">Уход</div>
+                        <div class="time-value">17:35</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="time-grid">
+                      <div class="time-item arrival">
+                        <div class="time-label">Приход</div>
+                        <div class="time-value">08:56</div>
+                      </div>
+                      <div class="time-item departure">
+                        <div class="time-label">Уход</div>
+                        <div class="time-value">17:33</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="time-grid">
+                      <div class="time-item arrival">
+                        <div class="time-label">Приход</div>
+                        <div class="time-value">08:57</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="employee-row" data-animation="fade-in-up">
+                <td class="employee-cell">
+                  <div class="employee-info">
+                    <div class="avatar-container">
+                      <img src="http://catalog.spbmiac.ru/wp-content/uploads/2024/09/Лазуткин-Никита.jpg" alt="Лазуткин Никита Алексеевич" class="employee-avatar">
+                    </div>
+                    <div class="employee-details">
+                      <div class="employee-name">Лазуткин Н.А.</div>
+                      <div class="employee-post">Инженер</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="time-grid">
+                      <div class="time-item arrival">
+                        <div class="time-label">Приход</div>
+                        <div class="time-value">08:28</div>
+                      </div>
+                      <div class="time-item departure">
+                        <div class="time-label">Уход</div>
+                        <div class="time-value">17:33</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="time-grid">
+                      <div class="time-item arrival">
+                        <div class="time-label">Приход</div>
+                        <div class="time-value">08:32</div>
+                      </div>
+                      <div class="time-item departure">
+                        <div class="time-label">Уход</div>
+                        <div class="time-value">17:35</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="time-grid">
+                      <div class="time-item arrival">
+                        <div class="time-label">Приход</div>
+                        <div class="time-value">08:24</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="employee-row" data-animation="fade-in-up">
+                <td class="employee-cell">
+                  <div class="employee-info">
+                    <div class="avatar-container">
+                      <img src="http://catalog.spbmiac.ru/wp-content/uploads/2025/09/Пономарева-В-1.jpg" alt="Пономарева Вера Викторовна" class="employee-avatar">
+                    </div>
+                    <div class="employee-details">
+                      <div class="employee-name">Пономарева В.В.</div>
+                      <div class="employee-post">Оператор электронно-вычислительных и вычислительных машин</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="time-grid">
+                      <div class="time-item arrival">
+                        <div class="time-label">Приход</div>
+                        <div class="time-value">09:01</div>
+                      </div>
+                      <div class="time-item departure">
+                        <div class="time-label">Уход</div>
+                        <div class="time-value">17:33</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="time-grid">
+                      <div class="time-item arrival">
+                        <div class="time-label">Приход</div>
+                        <div class="time-value">09:01</div>
+                      </div>
+                      <div class="time-item departure">
+                        <div class="time-label">Уход</div>
+                        <div class="time-value">17:35</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="time-grid">
+                      <div class="time-item arrival">
+                        <div class="time-label">Приход</div>
+                        <div class="time-value">09:01</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="employee-row" data-animation="fade-in-up">
+                <td class="employee-cell">
+                  <div class="employee-info">
+                    <div class="avatar-container">
+                      <img src="http://catalog.spbmiac.ru/wp-content/uploads/2024/09/Попов-А.А-1.jpg" alt="Попов Александр Александрович" class="employee-avatar">
+                    </div>
+                    <div class="employee-details">
+                      <div class="employee-name">Попов А.А.</div>
+                      <div class="employee-post">Инженер</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="employee-row" data-animation="fade-in-up">
+                <td class="employee-cell">
+                  <div class="employee-info">
+                    <div class="avatar-container">
+                      <img src="http://catalog.spbmiac.ru/wp-content/uploads/2024/09/Якушенко-А.В.jpg" alt="Якушенко Александр Валентинович" class="employee-avatar">
+                    </div>
+                    <div class="employee-details">
+                      <div class="employee-name">Якушенко А.В.</div>
+                      <div class="employee-post">Техник</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="time-grid">
+                      <div class="time-item arrival">
+                        <div class="time-label">Приход</div>
+                        <div class="time-value">08:54</div>
+                      </div>
+                      <div class="time-item departure">
+                        <div class="time-label">Уход</div>
+                        <div class="time-value">17:32</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="time-grid">
+                      <div class="time-item arrival">
+                        <div class="time-label">Приход</div>
+                        <div class="time-value">09:01</div>
+                      </div>
+                      <div class="time-item departure">
+                        <div class="time-label">Уход</div>
+                        <div class="time-value">17:36</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="time-grid">
+                      <div class="time-item arrival">
+                        <div class="time-label">Приход</div>
+                        <div class="time-value">09:15</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="org-row" data-animation="fade-in-up">
+                <td class="org-cell">
+                  <div class="org-info">
+                    <i class="bi bi-building me-2"></i>
+                    <span class="org-name">Управление информационно-технического обеспечения и технической поддержки</span>
+                    <span class="employee-count">1</span>
+                  </div>
+                </td>
+                <td class="org-day-cell"></td>
+                <td class="org-day-cell"></td>
+                <td class="org-day-cell"></td>
+                <td class="org-day-cell"></td>
+                <td class="org-day-cell"></td>
+                <td class="org-day-cell"></td>
+                <td class="org-day-cell"></td>
+              </tr>
+              <tr class="employee-row" data-animation="fade-in-up">
+                <td class="employee-cell">
+                  <div class="employee-info">
+                    <div class="avatar-container">
+                      <img src="http://catalog.spbmiac.ru/wp-content/uploads/2025/09/Давлечин-А.jpg" alt="Давлечин Андрей Анатольевич" class="employee-avatar">
+                    </div>
+                    <div class="employee-details">
+                      <div class="employee-name">Давлечин А.А.</div>
+                      <div class="employee-post">Начальник управления</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+                <td class="day-cell">
+                  <div class="time-display">
+                    <div class="no-data">
+                      <i class="bi bi-dash-lg"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card-footer elegant-footer bg-light border-0">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="footer-info">
+            <small class="text-muted">
+                <i class="bi bi-info-circle me-1"></i>
+                Отображаются данные для 2 подразделений
+            </small>
+          </div>
+          <div class="legend">
+            <div class="legend-item">
+              <span class="legend-color arrival"></span>
+              <small>Приход</small>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color departure"></span>
+              <small>Уход</small>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color lost-time"></span>
+              <small>Потери</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
