@@ -323,18 +323,28 @@ table.table-elegant tbody tr td.day-cell:nth-child(n+2):not(:last-child) {
     backdrop-filter: blur(20px);
     border-top: 1px solid var(--glass-border);
     padding: 1.5rem 2rem;
+    font-size: 20px;
+    
 }
 
 .legend { display: flex; gap: 1.5rem; align-items: center; }
 .legend-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; }
 .legend-color {
     width: 12px; height: 12px; border-radius: 50%;
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-sm); 
 }
 .legend-color.arrival { background: var(--arrival); }
 .legend-color.departure { background: var(--departure); }
 .legend-color.lost-time { 
     background: linear-gradient(135deg, #6b7280, #4b5563); 
+}
+
+.chevron-left{
+    margin-right: 15px;
+}
+
+.chevron-right{
+    margin-left: 11px;
 }
 
 [data-animation="fade-in-up"] {

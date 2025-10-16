@@ -16,10 +16,6 @@
                 <div class="d-flex align-items-start mb-3">
                     <!-- <img src="logo.png" alt="Логотип" class="header-logo me-3"> -->
                     <div>
-                        <h4 class="mb-1 fw-light">
-                            <i class="bi bi-calendar-week me-2"></i>
-                            Журнал посещений
-                        </h4>
                         <small class="opacity-75 date-range">
                             13.10.2025 — 19.10.2025
                         </small>
@@ -28,11 +24,11 @@
             </div>
             <div class="col-md-4 d-flex justify-content-end align-items-start pt-2">
                 <div class="btn-group btn-group-sm">
-                    <a href="/journal?week=-1" class="btn btn-outline-light">
+                    <a href="/journal?week=-1" class="btn btn-outline-light chevron-left">
                         <i class="bi bi-chevron-left"></i>
                     </a>
                     <a href="/journal?week=0" class="btn btn-outline-light text-decoration-none">Сегодня</a>
-                    <a href="/journal?week=1" class="btn btn-outline-light">
+                    <a href="/journal?week=1" class="btn btn-outline-light chevron-right">
                         <i class="bi bi-chevron-right"></i>
                     </a>
                 </div>
@@ -652,7 +648,7 @@
       </div>
       <div class="card-footer elegant-footer bg-light border-0">
         <div class="d-flex justify-content-between align-items-center">
-          <div class="footer-info">
+          <div style="margin-bottom: 10px;" class="footer-info">
             <small class="text-muted">
                 <i class="bi bi-info-circle me-1"></i>
                 Отображаются данные для 2 подразделений
@@ -661,15 +657,15 @@
           <div class="legend">
             <div class="legend-item">
               <span class="legend-color arrival"></span>
-              <small>Приход</small>
+              <small style="font-size: 13px;">Приход</small>
             </div>
             <div class="legend-item">
               <span class="legend-color departure"></span>
-              <small>Уход</small>
+              <small style="font-size: 13px;">Уход</small>
             </div>
             <div class="legend-item">
               <span class="legend-color lost-time"></span>
-              <small>Потери</small>
+              <small style="font-size: 13px;">Потери</small>
             </div>
           </div>
         </div>
